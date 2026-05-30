@@ -1,4 +1,4 @@
-nname: Sign Firmware
+name: Sign Firmware
 
 on:
   push:
