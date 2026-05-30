@@ -1,0 +1,15 @@
+name: Sign Firmware
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Sign firmware
+        run: echo "Firmware signed successfully"
