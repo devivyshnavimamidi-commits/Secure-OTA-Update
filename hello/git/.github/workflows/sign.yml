@@ -11,6 +11,6 @@ steps:
 uses: actions/setup-python@v5
 with: python-version: "3.11"
 -name: Install Dependencies
-run: pip install cryptography
+      run: pip install cryptography
 -name: Run Firmware Signing
-run: python sign_firmware.py
+      run: python sign_firmware.py
