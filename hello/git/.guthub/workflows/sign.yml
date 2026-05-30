@@ -1,0 +1,16 @@
+name: sign Firmware
+on:
+push:
+jobs:
+sign:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout Repository
+  uses: actions/checkout@v4
+-name: Setup Python
+uses: actions/setup-python@v5
+with: python-version: "3.11"
+-name: Install Dependencies
+run: pip install cryptography
+-name: Run Firmware Signing
+run: python sign_firmware.py
