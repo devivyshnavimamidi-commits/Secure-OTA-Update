@@ -7,7 +7,7 @@ with open("private_key.pem", "rb") as key_file:
         password=None
     )
 
-with open("hello/git/firmware.bin", "rb") as file:
+with open("firmware.bin", "rb") as file:
     firmware_data = file.read()
 
 signature = private_key.sign(
